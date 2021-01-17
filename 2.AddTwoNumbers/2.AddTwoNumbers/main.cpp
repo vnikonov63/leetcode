@@ -11,10 +11,6 @@ struct ListNode {
      ListNode(int x, ListNode *next) : val(x), next(next) {}
  };
 
-inline bool operator ==(ListNode l1, ListNode l2) {
-    return l1.val == l2.val;
-}
-
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode* dummyHead = new ListNode();
         
@@ -101,7 +97,7 @@ void Test() {
 }
 
 int main() {
-    TestRunner tr;
-    RUN_TEST(tr, Test);
+    //TestRunner tr;
+    //RUN_TEST(tr, Test);
     return 0;
 }
